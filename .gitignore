@@ -4,3 +4,117 @@
 
 # LangGraph
 .langgraph_api/
+# ========================================
+# Git Ignore Template for LangChain Products
+# Covers LangGraph, LangSmith, Python + Node.js setups
+# ========================================
+
+# LangGraph specific
+.langgraph_api/
+.langgraph_cache/
+.langgraph_logs/
+
+# LangSmith specific
+.langsmith/
+.langsmith_cache/
+.langsmith_logs/
+
+# -------------------------------
+# Environment & Secrets
+# -------------------------------
+.env
+.env.*
+*.env
+*.secrets
+*.key
+*.pem
+
+# -------------------------------
+# Python
+# -------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+*.manifest
+*.spec
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.conda/
+*.ipynb_checkpoints
+
+# -------------------------------
+# Node.js
+# -------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.cache/
+.eslintcache
+
+# -------------------------------
+# IDE / Editors
+# -------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# -------------------------------
+# Logs
+# -------------------------------
+logs/
+*.log
+*.log.*
+debug.log
+*.pid
+*.seed
+*.pid.lock
+
+# -------------------------------
+# Coverage / Testing
+# -------------------------------
+coverage/
+*.lcov
+test-results/
+.nyc_output/
+
+# -------------------------------
+# Misc
+# -------------------------------
+tmp/
+temp/
+*.bak
+*.old
+.DS_Store
